@@ -2,10 +2,10 @@ FROM node:20
 
 WORKDIR /app
 
-COPY index.js .
+COPY . .
 
-# No npm install (because no package.json)
+RUN npm install
 
 EXPOSE 3000
 
-CMD ["node", "index.js"]
+CMD ["node", "app.js"]
