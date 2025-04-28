@@ -1,4 +1,5 @@
 const express= require('express');
+require('./db/mongo')
 const todoRouter=require('./routes/todo');
 const app=express();
 const port=3000;
